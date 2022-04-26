@@ -135,6 +135,8 @@ RUN echo '\n\
 Driver = /usr/local/lib/libtdsodbc.so \n\
 ' >> /etc/odbcinst.ini
 
+# install pyodbc
+RUN pip3 install pyodbc
 
 #------------------------------------------------------------------------------
 # Install and configure R

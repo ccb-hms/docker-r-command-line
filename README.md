@@ -36,3 +36,21 @@ docker buildx ls
 docker buildx build --platform linux/arm64,linux/amd64 --progress=plain --push --tag MY_TAG .
 ```
 
+## Running the Image
+```
+docker \
+    run \
+    --rm \
+    --name r-container \
+    -d \
+    -v /tmp:/HostData \
+    -p 2200:22 \
+    -e CONTAINER_USER_USERNAME=test \
+    -e CONTAINER_USER_PASSWORD=test \
+    hmsccb/docker-r:r-4.2.0-container-1.0.0
+```
+
+## Connecting to the running container via SSH
+```
+ssh test@localhost -p 2200 -Y -o GlobalKnownHostsFile=/dev/null -o UserKnownHostsFile=/dev/null
+```
