@@ -1,5 +1,5 @@
 # docker-r-command-line
-A repository for R containers built on top of hmsccb/ubuntu-interactive images to provide multi-architecture R containers.
+A repository for multi-arch (AMD64 / ARM64) command-line R containers accessible via ssh.
 
 ## Running the Image
 The follwing can be used to pull and run the image from DockerHub, without needing to build locally:

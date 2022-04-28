@@ -4,6 +4,7 @@
 # Copyright: Harvard Medical School
 #
 
+# provides s6 supervisor, sshd, and basic utilites to facilitate interactive login
 FROM hmsccb/ubuntu-interactive:20.04
 
 #------------------------------------------------------------------------------
